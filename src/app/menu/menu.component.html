@@ -1,0 +1,58 @@
+<app-sticky-header>
+  <header>
+    <div class="header-container">
+      <nav>
+        <div class="menu">
+          <div class="logo">
+            <img src="assets/img/wolf.png" alt="logo">
+          </div>
+          <div class="title">
+            <p>
+              <span>
+                VR MASTER CLUB
+              </span>
+            </p>
+          </div>
+          <ul class="icons">
+            <li>
+              <a href="index.html" title="Home">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span class="link-text">HOME</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/games" [class.activated]="currentUrl == 'games'">
+                <i class="fas fa-gamepad" aria-hidden="true"></i>
+                <span class="link-text">Games</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html" title="Events">
+                <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                <span class="link-text">Events</span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html" title="News">
+                <i class="far fa-newspaper" aria-hidden="true"></i>
+                <span class="link-text">News</span>
+              </a>
+            </li>
+            <li>
+                <a routerLink="/contact" [class.activated]="currentUrl == 'contact'">
+                <i class="far fa-envelope" aria-hidden="true"></i>
+                <span class="link-text">Contact</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/login" [class.activated]="currentUrl == 'login'">
+                <i class="fas fa-sign-in-alt" aria-hidden="true"></i>
+                <span class="link-text">Login</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+</app-sticky-header>

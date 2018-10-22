@@ -1,3 +1,5 @@
+import { Router, NavigationEnd } from '@angular/router'
+
 import {
   animate,
   state,
@@ -52,7 +54,15 @@ enum Direction {
     ])
   ]
 })
+
 export class StickyHeaderComponent implements AfterViewInit {
+
+  currentUrl: string;
+
+  constructor(private router: Router) { 
+    router.events.subscribe((_: NavigationEnd) => this.currentUrl = this.router.url)
+  }
+
   private isVisible = true;
 
   @HostBinding('@toggle')
@@ -81,4 +91,5 @@ export class StickyHeaderComponent implements AfterViewInit {
     goingUp$.subscribe(() => (this.isVisible = true));
     goingDown$.subscribe(() => (this.isVisible = false));
   }
+
 }
