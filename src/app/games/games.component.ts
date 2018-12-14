@@ -17,7 +17,7 @@ export class GamesComponent implements OnInit {
   ngOnInit() {
     this.data.getGames().subscribe(
       data => this.games$ = data
-    )
+    );
   }
 
 }

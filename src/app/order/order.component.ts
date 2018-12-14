@@ -13,13 +13,13 @@ export class OrderComponent implements OnInit {
   game$: Object;
 
   constructor(private data: DataService, private route: ActivatedRoute) {
-    this.route.params.subscribe( params => this.game$ = params.id )
+    this.route.params.subscribe( params => this.game$ = params.id );
   }
 
   ngOnInit() {
     this.data.getGame(this.game$).subscribe(
       data => this.game$ = data
-    )
+    );
   }
 
 }

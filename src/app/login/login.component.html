@@ -22,7 +22,9 @@
       <button class="facebook"><i class="fab fa-facebook"></i></button>
       <button class="google"><i class="fab fa-google-plus"></i></button>
       <p class="dont"><i>Don't have an account?</i></p>
-      <p><u>Register</u></p>
+      <p>
+        <a routerLink="/register" [class.activated]="currentUrl == 'register'">Register</a>
+      </p>
     </div>
   </div>
 </div>

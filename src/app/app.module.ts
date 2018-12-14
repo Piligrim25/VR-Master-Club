@@ -16,6 +16,7 @@ import { MenuComponent } from './menu/menu.component';
 
 import { AgmCoreModule } from '@agm/core';
 import { ContactComponent } from './contact/contact.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ContactComponent } from './contact/contact.component';
     OrderComponent,
     HomeComponent,
     MenuComponent,
-    ContactComponent
+    ContactComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
