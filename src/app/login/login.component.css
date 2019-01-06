@@ -1,148 +1,179 @@
-body{
-    width:100%;
-    background-color:#607991;
-    /*background:-webkit-linear-gradient(#82B4D5,#fff);*/
-    font-family:'Trebuchet MS';
-    /*color:#fff;*/
-    height:100vh;
-  }
-  .main{
-    height:500px;
-    width:700px;
-    /*border:1px solid #fff;*/
-    margin: 10% auto;
-  }
-  .main div{
-    display: inline-block;
-    border:none;
-  }
-  .main .left{
-    width:50%;
-    float:left;
-    /* border-right:1px solid #e3e3e3; */
-    height:100%;
-    /*padding:15px 0 0 0;*/
-    background-color:rgb(245, 237, 237);
-    
-  }
-  .left h1{
-    text-align: center;
-    /*padding-left:120px;*/
-    padding-top:100px;
-    padding-bottom: 10px;
-    margin-bottom: 0;
-  }
-  .left p{
-    margin-top: 10px;
-    margin-bottom: -40px;
-    text-align:center;
-    color:grey;
-  }
-  .left form{
-    text-align: center;
-  }
-  .left form input{
-    text-align:center;
-    width:70%;
-    height:35px;
-    margin-bottom:10px;
-    border:none;
-    border:1px solid #F8F8F8;
-    background-color:#F8F8F8;
-    border-radius:25px;
-  }
-  .left form input:focus{
-    outline:none;
-  }
-  ::-webkit-input-placeholder{
-    color:grey;
-    letter-spacing: 1px;
-  }
-  .left form input[type="submit"]{
-    background-color:#FFBF37;
-    color:#fff;
-    font-weight: bold;
-  }
-  .left p.forgot{
-    color:grey;
-    font-size:12px;
-    padding-top:140px;
-  }
-  .left p.or{
-    color:grey;
-    font-size:15px;
-    border:1px solid #f8f8f8;
-    width:40px;
-    font-weight:200;
-    height:30px;
-    padding-top:10px;
-    background-color: #fff;
-    border-radius: 50%;
-    
-    top: 10%;
-    left: 92%;
-    z-index:10;
-    position: relative;
-    /*text-align:center;*/
-  }
-  /*.left .form{
+.body {
+  height: 700px;
+  background: url(/assets/img/login.jpg) no-repeat;
+  background-size: 100%;
+}
+
+.main {
+  height: 500px;
+  width: 700px;
+  margin: auto;
+}
+
+.main div {
+  display: inline-block;
+  border: none;
+}
+
+.main .left {
+  margin-top: 100px;
+  width: 50%;
+  float: left;
+  height: 100%;
+  background-color: rgb(245, 237, 237);
+}
+
+.left h1 {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.left p {
+  margin-top: 10px;
+  margin-bottom: -40px;
+  text-align: center;
+  color: grey;
+}
+
+.left form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.left form input {
+  text-align: center;
+  width: 70%;
+  height: 35px;
+  margin-bottom: 10px;
+  border: none;
+  border: 1px solid #F8F8F8;
+  background-color: #F8F8F8;
+  border-radius: 25px;
+}
+
+.left form input:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: grey;
+  letter-spacing: 1px;
+}
+
+.left form button {
+  display: inline-block;
+  padding: 10px 30px;
+  margin: auto;
+  border: 6px solid rgb(126, 202, 253);
+  border-radius: 100px 15px 100px 15px;
+  box-sizing: border-box;
+  font: bold;
+  font-weight: 300;
+  color: #FFFFFF;
+  background-color: #59bdf7;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.left form button:hover {
+  box-shadow:
+    1px 1px #53ea93,
+    2px 2px #53ea93,
+    3px 3px #53ea93,
+    4px 4px #53ea93;
+  -webkit-transform: translateX(-7px);
+  transform: translateX(-7px);
+}
+
+.left p.or {
+  color: grey;
+  font-size: 15px;
+  border: 1px solid #f8f8f8;
+  width: 40px;
+  font-weight: 200;
+  height: 30px;
+  padding-top: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 10%;
+  left: 92%;
+  z-index: 10;
+  position: relative;
+  /*text-align:center;*/
+}
+
+/*.left .form{
     border:1px solid;
   }*/
 
-  
-  .main .right{
-    /*height:100%;*/
-    width:50%;
-    float:left;
-    height:100%;
-    margin-left:-5px;
-    padding-right:5px;
-    background-color: #b8cff1;
-    /* background-image:url('https://s4.postimg.org/k8u6q3g8d/baloon.jpg'); */
-    background-size: cover;
-    text-align:center;
-  }
-  .right h1{
-    padding-top:100px;
-    margin-bottom:10px;
-  }
-  .right{
-    color:#fff;
-  }
-  .right p{
-    margin:0;
-  }
-  .right .social{
-    margin-top:40px;
-    width:100%;
-  }
-  .social button{
-    border:none;
-    padding:15px;
-    width:50px;
-    font-size:18px;
-    background-color:#fff;
-    margin-left:10px;
-    margin-right:10px;
-    border-radius:50%;
-  }
-  .social .twitter{
-    color:#55ACEE;
-  }
-  .social .facebook{
-    color:#012677;
-  }
-  .social .google{
-    color:#D50F25;
-  }
-  .social p{
-    font-size:12px;
-  }
-  .social p.dont{
-    padding-top:150px;
-    font-size:13px;
-  }
-  .social a{
-    text-decoration: none;
-    font-size:16px;
-  }
+.main .right {
+  /*height:100%;*/
+  margin-top: 100px;
+  width: 50%;
+  float: left;
+  height: 100%;
+  margin-left: -5px;
+  padding-right: 5px;
+  background-color: #b8cff1;
+  /* background-image:url('https://s4.postimg.org/k8u6q3g8d/baloon.jpg'); */
+  background-size: cover;
+  text-align: center;
+}
+
+.right h1 {
+  padding-top: 100px;
+  margin-bottom: 10px;
+}
+
+.right {
+  color: #fff;
+}
+
+.right p {
+  margin: 0;
+}
+
+.right .social {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.social button {
+  border: none;
+  padding: 15px;
+  width: 50px;
+  font-size: 18px;
+  background-color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.social .twitter {
+  color: #55ACEE;
+}
+
+.social .facebook {
+  color: #012677;
+}
+
+.social .google {
+  color: #D50F25;
+}
+
+.social p {
+  font-size: 12px;
+}
+
+.social p.dont {
+  padding-top: 150px;
+  font-size: 13px;
+}
+
+.social a {
+  text-decoration: none;
+  font-size: 16px;
+}

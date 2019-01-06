@@ -13,10 +13,15 @@ import { OrderComponent } from './order/order.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
+import { FormsModule } from '@angular/forms';
+import { httpInterceptorProviders } from './auth/auth-interceptor';
 
 import { AgmCoreModule } from '@agm/core';
 import { ContactComponent } from './contact/contact.component';
 import { RegisterComponent } from './register/register.component';
+import { AdminComponent } from './admin/admin.component';
+import { PmComponent } from './pm/pm.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -28,18 +33,22 @@ import { RegisterComponent } from './register/register.component';
     HomeComponent,
     MenuComponent,
     ContactComponent,
-    RegisterComponent
+    RegisterComponent,
+    AdminComponent,
+    PmComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     AgmCoreModule.forRoot({
       apiKey: "AIzaSyDw_sRy3qeAIqVb-jUJgCqxWEw838dvZo0"
     }),
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

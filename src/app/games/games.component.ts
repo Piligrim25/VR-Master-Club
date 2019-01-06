@@ -19,4 +19,5 @@ export class GamesComponent implements OnInit {
       data => this.games$ = data
     );
   }
+
 }
